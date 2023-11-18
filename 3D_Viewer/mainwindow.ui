@@ -590,6 +590,32 @@
      </property>
     </item>
    </widget>
+   <widget class="QComboBox" name="type_projection">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>40</y>
+      <width>140</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#comboBox {
+	border: 1px solid #ced4da;
+	padding-left: 15px;
+}</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>Parallel</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Central</string>
+     </property>
+    </item>
+   </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>

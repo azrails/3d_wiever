@@ -9,6 +9,11 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_FLAGS "-lGL -lGLU -lglut -lm")
+if(APPLE)
+    set(CMAKE_CXX_FLAGS "-framework OpenGL")
+endif()
+
+list(APPEND CMAKE_PREFIX_PATH /home/diana/Qt/6.6.0/gcc_64)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
