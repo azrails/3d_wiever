@@ -1,0 +1,100 @@
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ 
+Build flags: -DQT_QML_DEBUG
+Id flags:  
+
+The output was:
+1
+ld: library 'c++' not found
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang 
+Build flags: 
+Id flags:  
+
+The output was:
+1
+ld: library 'System' not found
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC failed with the following output:
+Change Dir: /Users/azrail/Desktop/rust_projects/3d_wiever/build-3D_Viewer-Qt_6_6_0_for_macOS-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/azrail/Qt/Tools/Ninja/ninja cmTC_b51fd && [1/2] Building CXX object CMakeFiles/cmTC_b51fd.dir/src.cxx.o
+clang: warning: -lGL: 'linker' input unused [-Wunused-command-line-argument]
+clang: warning: -lGLU: 'linker' input unused [-Wunused-command-line-argument]
+clang: warning: -lglut: 'linker' input unused [-Wunused-command-line-argument]
+clang: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]
+[2/2] Linking CXX executable cmTC_b51fd
+FAILED: cmTC_b51fd 
+: && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -lGL -lGLU -lglut -lm  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_b51fd.dir/src.cxx.o -o cmTC_b51fd   && :
+ld: library 'GL' not found
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+int main(int, char **)
+{
+    volatile std::atomic<char>    size_1;
+    volatile std::atomic<short>   size_2;
+    volatile std::atomic<int>     size_4;
+    volatile std::atomic<int64_t> size_8;
+
+    ++size_1;
+    ++size_2;
+    ++size_4;
+    ++size_8;
+
+    (void)size_1.load(std::memory_order_relaxed);
+    (void)size_2.load(std::memory_order_relaxed);
+    (void)size_4.load(std::memory_order_relaxed);
+    (void)size_8.load(std::memory_order_relaxed);
+
+    return 0;
+}
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC_WITH_LIB failed with the following output:
+Change Dir: /Users/azrail/Desktop/rust_projects/3d_wiever/build-3D_Viewer-Qt_6_6_0_for_macOS-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/Users/azrail/Qt/Tools/Ninja/ninja cmTC_c328a && [1/2] Building CXX object CMakeFiles/cmTC_c328a.dir/src.cxx.o
+clang: warning: -lGL: 'linker' input unused [-Wunused-command-line-argument]
+clang: warning: -lGLU: 'linker' input unused [-Wunused-command-line-argument]
+clang: warning: -lglut: 'linker' input unused [-Wunused-command-line-argument]
+clang: warning: -lm: 'linker' input unused [-Wunused-command-line-argument]
+[2/2] Linking CXX executable cmTC_c328a
+FAILED: cmTC_c328a 
+: && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -lGL -lGLU -lglut -lm  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/cmTC_c328a.dir/src.cxx.o -o cmTC_c328a  -latomic && :
+ld: library 'GL' not found
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+int main(int, char **)
+{
+    volatile std::atomic<char>    size_1;
+    volatile std::atomic<short>   size_2;
+    volatile std::atomic<int>     size_4;
+    volatile std::atomic<int64_t> size_8;
+
+    ++size_1;
+    ++size_2;
+    ++size_4;
+    ++size_8;
+
+    (void)size_1.load(std::memory_order_relaxed);
+    (void)size_2.load(std::memory_order_relaxed);
+    (void)size_4.load(std::memory_order_relaxed);
+    (void)size_8.load(std::memory_order_relaxed);
+
+    return 0;
+}
