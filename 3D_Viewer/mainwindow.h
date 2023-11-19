@@ -4,6 +4,8 @@
 #include <QFileDialog>
 #include <QMainWindow>
 #include <QtOpenGL>
+#include <QDir>
+#include <QTimer>
 
 #include "openglimpl.h"
 
@@ -43,7 +45,9 @@ class MainWindow : public QMainWindow {
 
   void on_type_projection_activated(int index);
 
- private:
+  void on_button_gif_clicked();
+
+  private:
   Ui::MainWindow *ui;
   OpenGLImpl *glwidget;
 };

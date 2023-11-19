@@ -8,9 +8,10 @@ set(CMAKE_AUTORCC ON)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-set(CMAKE_CXX_FLAGS "-lGL -lGLU -lglut -lm")
 if(APPLE)
     set(CMAKE_CXX_FLAGS "-framework OpenGL")
+else()
+    set(CMAKE_CXX_FLAGS "-lGL -lGLU -lglut -lm ")
 endif()
 
 list(APPEND CMAKE_PREFIX_PATH /home/diana/Qt/6.6.0/gcc_64)
@@ -18,6 +19,7 @@ list(APPEND CMAKE_PREFIX_PATH /home/diana/Qt/6.6.0/gcc_64)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS OpenGLWidgets)
+
 
 set(PROJECT_SOURCES
         main.cpp
@@ -27,6 +29,20 @@ set(PROJECT_SOURCES
         openglimpl.h openglimpl.cpp
         figure.h figure.c
         transforms.h transforms.c
+        gif/giflib/dgif_lib.c
+        gif/giflib/egif_lib.c
+        gif/giflib/gif_err.c
+        gif/giflib/gif_hash.c
+        gif/giflib/gifalloc.c
+        gif/giflib/quantize.c
+        gif/giflib/gif_font.c
+        gif/giflib/gif_hash.h
+        gif/giflib/gif_lib.h
+        gif/giflib/gif_lib_private.h
+        gif/qgifimage.cpp
+        gif/qgifglobal.h
+        gif/qgifimage.h
+        gif/qgifimage_p.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

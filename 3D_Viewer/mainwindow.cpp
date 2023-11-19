@@ -248,3 +248,9 @@ void MainWindow::on_type_projection_activated(int index) {
     glwidget->conf->type_projection = 1;  // frustrum
   this->glwidget->update();
 }
+
+void MainWindow::on_button_gif_clicked() {
+    glwidget->num = 0;
+    glwidget->tmr->start(100);
+}
+

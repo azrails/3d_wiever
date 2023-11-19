@@ -22,15 +22,15 @@ dvi:
 	open README.md
 
 dist: install
-	tar -czf calk.tar.gz $(PATH_EXE)
+	tar -czf 3d_viewer.tar.gz $(PATH_EXE)
 	rm -rf $(PATH_EXE)
 
 test:
-	$(CC)  test.c calk.c -o test.out -lcheck $(UBU)
+	$(CC)  test.c parser.c -o test.out -lcheck $(UBU)
 	./test.out
 	
 gcov_report:
-	$(CC) --coverage test.c calk.c -o test.out -lcheck $(UBU)
+	$(CC) --coverage test.c parser.c -o test.out -lcheck $(UBU)
 	./test.out
 	lcov -t "my_test" -c -d ./ --output-file ./test.info
 	genhtml -o report test.info

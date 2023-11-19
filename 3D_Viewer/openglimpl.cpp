@@ -1,8 +1,12 @@
+
 #include "openglimpl.h"
 
 OpenGLImpl::OpenGLImpl(QWidget *parent) : QOpenGLWidget(parent) {
   setWindowTitle("Viewer");
   this->conf = new_config(nullptr);
+
+  tmr = new QTimer(this);
+  connect(tmr, SIGNAL(timeout()), this, SLOT(gif_figure()));
 }
 
 OpenGLImpl::~OpenGLImpl() {}
@@ -121,4 +125,42 @@ void OpenGLImpl::screen_widget(int index) {
   else
     image.save("screenshot.bmp", "BMP");
 }
+
+void OpenGLImpl::gif_figure() {
+  if (num == 49) {
+    tmr->stop();
+    create_gif();
+  }
+    screencast[num] = grabFramebuffer();
+    num += 1;
+
+  //QImage image = grabFramebuffer();
+  //QString a = QString::number(num);
+  // перед пушем на гит изменить путь
+  //image.save("photo/toGif" + a + ".png", "PNG");
+}
+
+void OpenGLImpl::create_gif() {
+  QGifImage gif;
+  for (int i = 0; i < 50; gif.addFrame(screencast[i++], 100)) {}
+  QString str =
+      QFileDialog::getSaveFileName(0, "Save as", "", "*.gif");
+  gif.save(str);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

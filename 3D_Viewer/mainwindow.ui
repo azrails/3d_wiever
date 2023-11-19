@@ -62,6 +62,17 @@
       <height>38</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	border: 1px solid rgb(154, 153, 150);
+	padding-left: 10px;
+	font: 300 11pt &quot;URW Bookman&quot;;
+}
+
+ QComboBox:on { /* сдвиг текста когда выпадающий список раскрывается */
+    padding-left: 20px;
+ }</string>
+    </property>
     <property name="currentText">
      <string>X</string>
     </property>
@@ -89,6 +100,17 @@
       <width>51</width>
       <height>38</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	border: 1px solid rgb(154, 153, 150);
+	padding-left: 10px;
+	font: 300 11pt &quot;URW Bookman&quot;;
+}
+
+ QComboBox:on { /* сдвиг текста когда выпадающий список раскрывается */
+     padding-left: 20px;
+ }</string>
     </property>
     <property name="currentText">
      <string>X</string>
@@ -118,6 +140,11 @@
       <height>38</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+     </font>
+    </property>
     <property name="text">
      <string>Scale</string>
     </property>
@@ -130,6 +157,12 @@
       <width>81</width>
       <height>38</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>11</pointsize>
+     </font>
     </property>
     <property name="text">
      <string>Rotate</string>
@@ -144,6 +177,12 @@
       <height>38</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
     <property name="text">
      <string>Translate</string>
     </property>
@@ -154,7 +193,7 @@
       <x>20</x>
       <y>10</y>
       <width>661</width>
-      <height>29</height>
+      <height>33</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -162,6 +201,11 @@
       <layout class="QHBoxLayout" name="fileInfoTop">
        <item>
         <widget class="QPushButton" name="fileDialogButton">
+         <property name="font">
+          <font>
+           <family>URW Bookman</family>
+          </font>
+         </property>
          <property name="text">
           <string>Open file</string>
          </property>
@@ -212,6 +256,11 @@
            <height>0</height>
           </size>
          </property>
+         <property name="font">
+          <font>
+           <family>URW Bookman</family>
+          </font>
+         </property>
          <property name="text">
           <string>Vertices</string>
          </property>
@@ -224,6 +273,11 @@
            <width>67</width>
            <height>0</height>
           </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>URW Bookman</family>
+          </font>
          </property>
          <property name="text">
           <string>0</string>
@@ -249,6 +303,11 @@
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
         <widget class="QLabel" name="eLabel">
+         <property name="font">
+          <font>
+           <family>URW Bookman</family>
+          </font>
+         </property>
          <property name="text">
           <string>Edges</string>
          </property>
@@ -256,6 +315,11 @@
        </item>
        <item>
         <widget class="QLabel" name="eLabelCount">
+         <property name="font">
+          <font>
+           <family>URW Bookman</family>
+          </font>
+         </property>
          <property name="text">
           <string>0</string>
          </property>
@@ -285,6 +349,11 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+     </font>
+    </property>
     <property name="text">
      <string>Empty</string>
     </property>
@@ -298,6 +367,11 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+     </font>
+    </property>
     <property name="text">
      <string>Circle</string>
     </property>
@@ -310,6 +384,11 @@
       <width>85</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+     </font>
     </property>
     <property name="text">
      <string>Square</string>
@@ -326,7 +405,8 @@
     </property>
     <property name="font">
      <font>
-      <italic>true</italic>
+      <family>URW Bookman</family>
+      <italic>false</italic>
      </font>
     </property>
     <property name="text">
@@ -342,6 +422,11 @@
       <height>26</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+     </font>
+    </property>
     <property name="text">
      <string>Line</string>
     </property>
@@ -354,6 +439,11 @@
       <width>85</width>
       <height>26</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+     </font>
     </property>
     <property name="text">
      <string>Dotted</string>
@@ -370,7 +460,8 @@
     </property>
     <property name="font">
      <font>
-      <italic>true</italic>
+      <family>URW Bookman</family>
+      <italic>false</italic>
      </font>
     </property>
     <property name="text">
@@ -386,10 +477,19 @@
       <height>40</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>11</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">#comboBox {
-	border: 1px solid #ced4da;
-	padding-left: 15px;
+     <string notr="true">QComboBox {
+	border: 1px solid rgb(154, 153, 150);
+	padding-left:5px;
+	font: 300 11pt &quot;URW Bookman&quot;;
 }</string>
     </property>
     <item>
@@ -501,8 +601,15 @@
     </property>
     <property name="font">
      <font>
-      <italic>true</italic>
+      <family>URW Bookman</family>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+	font: &quot;URW Bookman&quot;;
+}</string>
     </property>
     <property name="text">
      <string>Size_vertex_or_edg</string>
@@ -519,7 +626,8 @@
     </property>
     <property name="font">
      <font>
-      <italic>true</italic>
+      <family>URW Bookman</family>
+      <italic>false</italic>
      </font>
     </property>
     <property name="text">
@@ -534,6 +642,17 @@
       <width>51</width>
       <height>38</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	border: 1px solid rgb(154, 153, 150);
+	padding-left: 10px;
+	font: 300 11pt &quot;URW Bookman&quot;;
+}
+
+ QComboBox:on { /* сдвиг текста когда выпадающий список раскрывается */
+     padding-left: 10px;
+ }</string>
     </property>
     <property name="currentText">
      <string>X</string>
@@ -559,9 +678,14 @@
      <rect>
       <x>839</x>
       <y>260</y>
-      <width>90</width>
+      <width>92</width>
       <height>30</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+     </font>
     </property>
     <property name="text">
      <string>Screenshot</string>
@@ -575,6 +699,21 @@
       <width>70</width>
       <height>30</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>11</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	border: 1px solid rgb(154, 153, 150);
+	padding-left: 10px;
+	font: 300 11pt &quot;URW Bookman&quot;;
+}</string>
     </property>
     <property name="currentText">
      <string>jpeg</string>
@@ -600,10 +739,18 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">#comboBox {
-	border: 1px solid #ced4da;
-	padding-left: 15px;
-}</string>
+     <string notr="true">QComboBox {
+	border: 1px solid rgb(154, 153, 150);
+	padding-left: center;
+	font: 300 11pt &quot;URW Bookman&quot;;
+}
+
+ QComboBox:on { /* сдвиг текста когда выпадающий список раскрывается */
+     padding-left: center;
+ }
+
+
+</string>
     </property>
     <item>
      <property name="text">
@@ -615,6 +762,25 @@
       <string>Central</string>
      </property>
     </item>
+   </widget>
+   <widget class="QPushButton" name="button_gif">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>260</y>
+      <width>92</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>URW Bookman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>GIF</string>
+    </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>

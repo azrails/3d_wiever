@@ -5,7 +5,10 @@
 #include <QMouseEvent>
 #include <QObject>
 #include <QOpenGLWidget>
+#include <QTimer>
 #include <limits>
+#include <QFileDialog>
+#include "gif/qgifimage_p.h"
 
 extern "C" {
 #include "figure.h"
@@ -19,6 +22,12 @@ class OpenGLImpl : public QOpenGLWidget {
   ~OpenGLImpl();
   config *conf;
   void screen_widget(int index);
+  QImage screencast[50];
+  int num;
+  QTimer *tmr;
+
+ private slots:
+  void gif_figure();
 
  private:
   float xRot, yRot, zRot;
@@ -29,6 +38,7 @@ class OpenGLImpl : public QOpenGLWidget {
   float cos_distance(float *fst, float *snd);
   void mousePressEvent(QMouseEvent *);
   void mouseMoveEvent(QMouseEvent *);
+  void create_gif();
 };
 
 #endif  // OPENGLIMPL_H
