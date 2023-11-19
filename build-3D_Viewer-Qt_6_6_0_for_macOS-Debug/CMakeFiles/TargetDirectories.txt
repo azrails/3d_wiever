@@ -1,0 +1,9 @@
+/Users/azrail/Desktop/rust_projects/3d_wiever/build-3D_Viewer-Qt_6_6_0_for_macOS-Debug/CMakeFiles/3D_Viewer.dir
+/Users/azrail/Desktop/rust_projects/3d_wiever/build-3D_Viewer-Qt_6_6_0_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/azrail/Desktop/rust_projects/3d_wiever/build-3D_Viewer-Qt_6_6_0_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/azrail/Desktop/rust_projects/3d_wiever/build-3D_Viewer-Qt_6_6_0_for_macOS-Debug/CMakeFiles/list_install_components.dir
+/Users/azrail/Desktop/rust_projects/3d_wiever/build-3D_Viewer-Qt_6_6_0_for_macOS-Debug/CMakeFiles/install.dir
+/Users/azrail/Desktop/rust_projects/3d_wiever/build-3D_Viewer-Qt_6_6_0_for_macOS-Debug/CMakeFiles/install/local.dir
+/Users/azrail/Desktop/rust_projects/3d_wiever/build-3D_Viewer-Qt_6_6_0_for_macOS-Debug/CMakeFiles/install/strip.dir
+/Users/azrail/Desktop/rust_projects/3d_wiever/build-3D_Viewer-Qt_6_6_0_for_macOS-Debug/CMakeFiles/3D_Viewer_autogen_timestamp_deps.dir
+/Users/azrail/Desktop/rust_projects/3d_wiever/build-3D_Viewer-Qt_6_6_0_for_macOS-Debug/CMakeFiles/3D_Viewer_autogen.dir
