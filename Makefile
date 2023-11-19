@@ -1,21 +1,19 @@
 CC =gcc -g -Wall -Werror -Wextra -std=c11 -D_GNU_SOURSE
 OS = $(shell uname -s)
 ifeq ($(OS), Linux)
-EXE_NAME=3D_Viewer
 UBU =  -lm -lpthread -lrt -lsubunit
 else
-EXE_NAME=3D_Viewer.app/Contents/MacOS/3D_Viewer
+UBU = 
 endif
-PATH_EXE=~/Desktop/3D_Viewer
-
+PATH_EXE=~/'Рабочий стол'/3D_Viewer
 
 all:install
 
 install:
 	cd 3D_Viewer/ && mkdir build
 	cd 3D_Viewer/build && cmake .. && make
-	cd 3D_Viewer/build && cp -r $(EXE_NAME) $(PATH_EXE)
-	#rm -drf 3D_Viewer/build
+	cd 3D_Viewer/build && cp -r 3D_Viewer $(PATH_EXE)
+	rm -drf 3D_Viewer/build
 
 uninstall:
 	rm -rf $(PATH_EXE)

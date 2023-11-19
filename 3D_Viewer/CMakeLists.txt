@@ -8,19 +8,13 @@ set(CMAKE_AUTORCC ON)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
-<<<<<<< HEAD
 if(APPLE)
     set(CMAKE_CXX_FLAGS "-framework OpenGL")
 else()
     set(CMAKE_CXX_FLAGS "-lGL -lGLU -lglut -lm ")
-=======
-if(LINUX)
-    set(CMAKE_CXX_FLAGS "-lGL -lGLU -lglut -lm")
->>>>>>> refs/remotes/origin/main
 endif()
 
 list(APPEND CMAKE_PREFIX_PATH /home/diana/Qt/6.6.0/gcc_64)
-list(APPEND CMAKE_PREFIX_PATH /Users/azrail/Qt/6.6.0/macos)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
